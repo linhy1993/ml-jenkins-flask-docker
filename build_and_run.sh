@@ -1,6 +1,6 @@
 #!/bin/bash
 # update code
-project_dir="/Users/lhy/PycharmProjects/ml-jenkins-flask-docker"
+project_dir="app"
 cd $project_dir && git pull
 
 # build and run with new code
