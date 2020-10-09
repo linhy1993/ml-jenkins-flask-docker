@@ -9,6 +9,11 @@ app = Flask(__name__)
 model = pickle.load(open('model.pkl', 'rb'))
 
 
+@app.route('/')
+def hello_world():
+    return 'Hello, World!'
+
+
 @app.route('/api', methods=['POST'])
 def predict():
     # Get the data from POST request
