@@ -3,7 +3,7 @@ import subprocess
 
 app = Flask(__name__)
 
-# git hub web hook
+# test
 @app.route('/github_webhook', methods=['POST'])
 def rebuild():
     print('new commits to github repository')
