@@ -16,7 +16,7 @@ def predict():
     result = model.predict(data['feature'])
     return jsonify(result[0].tolist())
 
-
+# webhook
 @app.route('/github_webhook', methods=['POST'])
 def rebuild():
     print('new commits to github repository')
