@@ -10,3 +10,4 @@ labels = {
 
 r = requests.post(url, json={'feature': feature})
 print(labels[r.json()])
+print("finish")
