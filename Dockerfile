@@ -10,4 +10,4 @@ RUN pip install -r requirements.txt
 
 COPY . /app
 
-CMD python /app/train_model.py && python /app/server.py && python /app/hook_server.py
+CMD python /app/train_model.py && python /app/server.py
